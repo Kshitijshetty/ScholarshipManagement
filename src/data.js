@@ -1,0 +1,133 @@
+export const student = {
+  name: "Maya Patel",
+  year: "Sophomore",
+  major: "Computer Science",
+  initials: "MP",
+};
+
+export const statCards = [
+  {
+    id: "applications",
+    icon: "checklist",
+    label: "Applications",
+    metric: "3",
+    supportingLabel: "Active applications",
+    helperText: "2 need action before your next deadline.",
+    buttonLabel: "View applications",
+  },
+  {
+    id: "due-soon",
+    icon: "clock",
+    label: "Due soon",
+    metric: "2",
+    supportingLabel: "Deadlines this week",
+    helperText: "Closest deadline is Jul 13.",
+    buttonLabel: "View deadlines",
+  },
+  {
+    id: "ready",
+    icon: "check-document",
+    label: "Ready",
+    metric: "1",
+    supportingLabel: "Ready to submit",
+    helperText: "Final review needed before submission.",
+    buttonLabel: "Review now",
+  },
+  {
+    id: "awards",
+    icon: "trophy",
+    label: "Awards",
+    metric: "$1,500",
+    supportingLabel: "Scholarships awarded",
+    helperText: "1 scholarship confirmed this cycle.",
+    buttonLabel: "View awards",
+  },
+];
+
+export const scholarships = [
+  {
+    id: "stem-leadership",
+    title: "STEM Leadership Scholarship",
+    provider: "National STEM Foundation",
+    deadline: "Jul 13",
+    award: "$2,500",
+    status: "Missing transcript",
+    progress: 80,
+    priority: "urgent",
+    visual: "abstract-blue",
+    requirements: [
+      { label: "Essay", status: "Complete" },
+      { label: "Transcript", status: "Missing" },
+    ],
+    actionPanel: {
+      title: "Required action",
+      badge: "3 days left",
+      task: "Upload official transcript",
+      description: "This is the last missing requirement for this application.",
+      primaryAction: "Upload transcript",
+      secondaryAction: "View application",
+    },
+  },
+  {
+    id: "community-impact",
+    title: "Community Impact Award",
+    provider: "Rochester Community Fund",
+    deadline: "Jul 15",
+    award: "$1,000",
+    status: "Essay draft incomplete",
+    progress: 55,
+    priority: "medium",
+    visual: "abstract-warm",
+    requirements: [
+      { label: "Impact essay", status: "Draft started" },
+      { label: "Resume", status: "Uploaded" },
+    ],
+    actionPanel: {
+      title: "Required action",
+      badge: "5 days left",
+      task: "Finish impact essay",
+      description: "Your draft is started but missing the final response.",
+      primaryAction: "Continue essay",
+      secondaryAction: "View application",
+    },
+  },
+  {
+    id: "first-gen",
+    title: "First Generation Student Grant",
+    provider: "Student Access Foundation",
+    deadline: "Jul 18",
+    award: "$1,500",
+    status: "Ready to submit",
+    progress: 100,
+    priority: "ready",
+    visual: "abstract-neutral",
+    requirements: [
+      { label: "Profile", status: "Complete" },
+      { label: "Recommendation", status: "Received" },
+    ],
+    actionPanel: {
+      title: "Final step",
+      badge: "Ready",
+      task: "Review and submit",
+      description: "All required materials are complete.",
+      primaryAction: "Review & submit",
+      secondaryAction: "View application",
+    },
+  },
+];
+
+export const readinessChecklist = [
+  { label: "Profile completed", state: "complete" },
+  { label: "Resume uploaded", state: "complete" },
+  { label: "FAFSA imported", state: "complete" },
+  { label: "Recommendation requested", state: "in-progress" },
+  { label: "Essay draft started", state: "in-progress" },
+  { label: "Transcript missing", state: "missing" },
+];
+
+export const deadlines = [
+  { date: "Jul 13", title: "STEM Leadership Scholarship" },
+  { date: "Jul 15", title: "Community Impact Award" },
+  { date: "Jul 18", title: "First Generation Student Grant" },
+  { date: "Jul 28", title: "Women in Computing Scholarship" },
+];

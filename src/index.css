@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bebas Neue Pro", "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: "Peridot Latin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-page: #f3f4f2;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f8f7;
+  --color-border: #dadde1;
+
+  --color-ink: #101214;
+  --color-ink-soft: #767c85;
+  --color-ink-faint: #9aa0a8;
+
+  --color-primary: #111827;
+  --color-primary-hover: #000000;
+  --color-primary-soft: #eceef1;
+
+  --color-warning-bg: #fff2d8;
+  --color-warning-text: #b45309;
+
+  --color-danger-bg: #ffe5e5;
+  --color-danger-text: #d12c2c;
+
+  --color-success-bg: #e6f6ea;
+  --color-success-text: #1f7a3a;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background: var(--color-page);
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: white;
+  }
+}
+
+@layer utilities {
+  .font-feature-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
