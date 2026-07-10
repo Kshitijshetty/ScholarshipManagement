@@ -149,7 +149,7 @@ function App() {
           </div>
 
           <footer className="mt-10 border-t border-border pt-5 pb-1 text-center text-[12px] text-ink-faint">
-            Scholarship Dashboard &middot; a calmer way to keep up with deadlines
+            Scholarship Dashboard
           </footer>
         </main>
       </div>

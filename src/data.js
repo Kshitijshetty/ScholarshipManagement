@@ -126,8 +126,34 @@ export const readinessChecklist = [
 ];
 
 export const deadlines = [
-  { date: "Jul 13", title: "STEM Leadership Scholarship" },
-  { date: "Jul 15", title: "Community Impact Award" },
-  { date: "Jul 18", title: "First Generation Student Grant" },
-  { date: "Jul 28", title: "Women in Computing Scholarship" },
+  {
+    id: "stem-leadership",
+    day: "13",
+    month: "JUL",
+    timeRemaining: "3 days",
+    title: "STEM Leadership Scholarship",
+    metadata: "Transcript required",
+    provider: "National STEM Foundation",
+    accent: "danger",
+  },
+  {
+    id: "community-impact",
+    day: "15",
+    month: "JUL",
+    timeRemaining: "5 days",
+    title: "Community Impact Award",
+    metadata: "Essay draft incomplete",
+    provider: "Rochester Community Fund",
+    accent: "warning",
+  },
+  {
+    id: "first-gen",
+    day: "18",
+    month: "JUL",
+    timeRemaining: "8 days",
+    title: "First Generation Student Grant",
+    metadata: "Ready for final review",
+    provider: "Student Access Foundation",
+    accent: null,
+  },
 ];
